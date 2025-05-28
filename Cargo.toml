@@ -1,0 +1,21 @@
+[package]
+name = "metrics-utils-macros"
+version = "0.1.0"
+edition = "2021"
+description = "Procedural utility macros for ease of recording metrics."
+documentation = "https://docs.rs/metrics-utils-macros"
+repository = "https://github.com/yourusername/metrics-utils-macros"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["metrics", "macros", "proc-macro", "observability", "performance"]
+categories = ["development-tools::profiling", "development-tools::debugging"]
+authors = ["Your Name <your.email@example.com>"]
+homepage = "https://github.com/yourusername/metrics-utils-macros"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0", features = ["full"] }
+quote = "1.0"
+proc-macro2 = "1.0"
